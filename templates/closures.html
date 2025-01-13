@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='closures.css') }}">
+</head>
+<body>
+    <!-- Background Image with Overlay -->
+    <div class="background">
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="/">&larr; Back</a>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content">
+        <!-- Title -->
+        <h1>Closures</h1>
+
+        <!-- List of Closures -->
+        <div class="closure-list">
+            {% for closure_name, closure_date in closures %}
+            <div class="closure-item">
+                <span class="closure-name">{{ closure_name }}</span>
+                <span class="closure-date">{{ closure_date }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='display.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Messages</h1>
+        <div class="messages">
+            {% for name, email, message in messages %}
+            <div class="message">
+                <h2>{{ name }}</h2>
+                <p><strong>Email:</strong> {{ email }}</p>
+                <p>{{ message }}</p>
+            </div>
+            <hr>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

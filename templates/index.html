@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starship News</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="background-video">
+        <source src="{{ url_for('static', filename='catch.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay Content -->
+    <div class="overlay">
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-icon" onclick="toggleSidebar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <div class="sidebar" id="sidebar">
+            <ul>
+                <li><a href="/news">Latest News</a></li>
+                <li><a href="/multicam">Multi-cam</a></li>
+                <li><a href="/closures">Closures</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <!-- Center Text -->
+        <div class="center-text">
+            <h1>For a future better than the past</h1>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <footer class="footer">
+        <p>&copy; Website Created by YasinShafiei</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

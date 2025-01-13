@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-cam Live Streams</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='multicam.css') }}">
+</head>
+<body>
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="{{ url_for('home') }}">&larr; Back</a>
+    </div>
+
+    <!-- Live Streams -->
+    <div class="streams-container">
+        <!-- Stream 1: NSF -->
+        <div class="stream">
+            <h2>NASASpaceFlight 24/7</h2>
+            <iframe src="https://www.youtube.com/embed/mhJRzQsLZGg?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <!-- Stream 2: LabPadre -->
+        <div class="stream">
+            <h2>LabPadre NerdleCam</h2>
+            <iframe src="https://www.youtube.com/embed/eTVn1zYqE8g?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <!-- Stream 3: LabPadre -->
+        <div class="stream">
+            <h2>LabPadre RoverCam</h2>
+            <iframe src="https://www.youtube.com/embed/OLrmlRbwTik?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <!-- Stream 4: LabPadre -->
+        <div class="stream">
+            <h2>LabPadre SentinelCam</h2>
+            <iframe src="https://www.youtube.com/embed/IQV0DlS1Ew0?autoplay=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

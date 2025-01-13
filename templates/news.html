@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Starship News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='news.css') }}">
+</head>
+<body>
+    <!-- Background Image with Overlay -->
+    <div class="background">
+        <div class="overlay"></div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+        <a href="{{ url_for('home') }}">&larr; Back</a>
+    </div>
+
+    <!-- Centered Content -->
+    <div class="content">
+        <!-- Title -->
+        <h1>Latest Starship News</h1>
+
+        <!-- News Content -->
+        <p id="news-content">
+            7th Flight of Starship is scheduled for NET than Jan 15th. The launch window will open at 4:00 pm CT. 
+
+            In this Flight SpaceX will launch the new generation of Ship (S33) for the first time, which includes a new front section and forward flaps design, increased propellant capacity by 25%, vacuum jacketing of feed lines, new feed line system for Raptor-Vacuum engines, improved avionics and several other upgrades. The Ship will also fly with new tile experiments, including metallic tile options and one with active cooling. 
+            
+            The Ship will attempt an in-space Raptor relight and deployment of 10 Starlink simulators for the first time. 
+            
+            In this Flight, SpaceX will attempt to catch the Super Heavy booster (if tower and booster were in good condition). 
+            
+            This Flight will follow the same trajectory as previous Flight, and the Ship will perform a simulated catch in the Indian Ocean. 
+            
+            Starship Flight 7 is going to be the most exciting Flight of Starship yet! Excitement Guaranteed! 
+        </p>
+    </div>
+</body>
+</html>
