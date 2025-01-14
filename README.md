@@ -22,8 +22,7 @@ In this page, the usser can find the latest news about Starship.
 
 ### Page 2 Multi-Cam:
 In this page, the user can see multiple live camera feeds (from YouTube) of Starbase texas. 
-![Uploading Screenshot 2025-01-14 at 9.55.04 AM.png…]()
-
+![Screenshot 2025-01-14 at 9 55 04 AM](https://github.com/user-attachments/assets/98081ef6-1cf2-49c5-9542-13ccb16eb772)
 
 ### Page 3: Road Closures 
 In this page, the user can see the schedule for road closures (HW4 at Starbase). The closures are loaded from a databse (`closures.db` file).
