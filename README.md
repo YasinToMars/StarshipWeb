@@ -1,4 +1,4 @@
-![Screenshot 2025-01-14 at 9 57 33 AM](https://github.com/user-attachments/assets/1e0603e5-b4be-4ed2-b3cf-79639c1dbf37)# StarshipWeb
+# StarshipWeb
 **A website for the future** <br>
 This is an inspiring website with the goal of giving latest news about SpaceX's Starship rocket to rocket nerds. <br>
 ### About websites:
